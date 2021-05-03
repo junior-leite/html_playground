@@ -129,6 +129,41 @@
         </tr>
       </tbody>
     </table>
+
+    <div style="margin-top: 30px; padding-bottom: 50px">
+      <form action="/contato" method="POST">
+        <label for="nome" >Nome:</label>
+        <input id="nome" type="text" placeholder="Digite seu nome" value="valor padrao" name="nome">
+        <br>
+        <br>
+        <label for="descricao">Descrição:</label>
+        <textarea name="descricao" id="descricao"></textarea>
+        <br>
+        <br>
+        <label for="estado">Estado</label>
+        <select name="estado">
+          <option value="MG">Minas Gerais</option>
+          <option value="SP">São Paulo</option>
+          <option value="MT">Mato Grosso do Sul</option>
+          <option value="RO">Rondônia</option>
+        </select>
+        <br>
+        <br>
+        <label for="email">Email:</label>
+        <input type="email" name="email">
+        <label for="checkbox">Quero Receber E-mail:</label>
+        <input type="checkbox">
+        <br>
+        <label for="radio">Sua Idade:</label>
+        0-30 anos <input type="radio" name="age">
+        30-60 anos <input type="radio" name="age">
+        60-100 anos <input type="radio" name="age">
+        <br>
+        <br>
+        <button type="submit">Salvar</button>
+      </form>
+    </div>
+    
     <br>
   </body>
 </html>
